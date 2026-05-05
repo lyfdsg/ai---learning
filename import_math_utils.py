@@ -15,3 +15,6 @@ from math_utils import *
 print(PI)
 print(add(5, 3))
 print(multiply(5, 3))
+
+import if_name
+print
