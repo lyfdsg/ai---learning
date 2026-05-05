@@ -1,5 +1,9 @@
-import math_utils
-print(math_utils.PI)
+# 通过编辑包my_tool中的__init__.py文件，
+# 我们可以将math_utils模块中的变量和函数直接导入到包的命名空间中，
+# 这样在使用if_name.py时就可以直接使用PI、add和multiply，而不需要再通过math_utils来访问它们。
+from my_tool import PI, add , multiply 
+print("This is if_name.py, and we have imported math_utils from my_tool.", PI, add(2, 3), multiply(4, 5))
+
 
 PI = 3.14159
 
